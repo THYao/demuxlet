@@ -1,0 +1,20 @@
+language: cpp
+
+compiler:
+  - clang
+  - gcc
+
+addons:
+  apt:
+    packages:
+    - autoconf
+    - automake
+    - zlib
+    - g++
+    - libtool
+
+sudo: false
+install:
+  - "autoreconf -vfi"
+  - "./configure"
+script: "make"
