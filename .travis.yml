@@ -9,7 +9,7 @@ addons:
     packages:
     - autoconf
     - automake
-    - zlib-devel
+    - zlib1g-devel
     - libtool
     - libbz2-dev
     - liblzma-dev
