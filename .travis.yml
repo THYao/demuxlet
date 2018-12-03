@@ -21,6 +21,9 @@ sudo: true
 before_install:
   - ./install_htslib.sh
 install:
+  - wget https://github.com/samtools/htslib/releases/download/1.9/htslib-1.9.tar.bz2
+  - tar -xvjf htslib-1.9.tar.bz2
+  - pushd htslib-1.9 && ./configure --prefix=/usr && make && sudo make instal && popd
   - "autoreconf -vfi"
   - "./configure"
 script: "make"
