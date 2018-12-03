@@ -19,7 +19,7 @@ addons:
 sudo: true
 
 before_install:
-  - ./install-protobuf.sh
+  - ./install_htslib.sh
 install:
   - "autoreconf -vfi"
   - "./configure"
