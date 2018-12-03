@@ -14,7 +14,7 @@ addons:
     - liblzma-dev
     - libcurl4-openssl-dev
     - libcrypto++-dev
-    - zlib1g-devel
+    - zlib1g-dev
 
 sudo: true
 
