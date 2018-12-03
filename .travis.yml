@@ -9,11 +9,17 @@ addons:
     packages:
     - autoconf
     - automake
-    - zlib
-    - g++
+    - zlib-devel
     - libtool
+    - libbz2-dev
+    - liblzma-dev
+    - libcurl4-openssl-dev
+    - libcrypto++-dev
 
-sudo: false
+sudo: true
+
+before_install:
+  - ./install-protobuf.sh
 install:
   - "autoreconf -vfi"
   - "./configure"
