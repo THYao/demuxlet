@@ -9,12 +9,12 @@ addons:
     packages:
     - autoconf
     - automake
-    - zlib1g-devel
     - libtool
     - libbz2-dev
     - liblzma-dev
     - libcurl4-openssl-dev
     - libcrypto++-dev
+    - zlib1g-devel
 
 sudo: true
 
