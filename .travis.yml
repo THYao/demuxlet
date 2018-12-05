@@ -17,7 +17,6 @@ addons:
     - libbz2-dev
     - liblzma-dev
     - libcurl4-openssl-dev
-    - libcrypto++-dev
     - zlib1g-dev
   homebrew:
     packages:
