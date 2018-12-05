@@ -27,9 +27,6 @@ addons:
     - xz
     - curl
     - openssl
-    - llvm
-    - libomp
-
 
 sudo: required
 install:
