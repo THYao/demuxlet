@@ -36,7 +36,7 @@ install:
   - wget https://github.com/samtools/htslib/releases/download/1.9/htslib-1.9.tar.bz2
   - tar -xvjf htslib-1.9.tar.bz2
   - sudo mv htslib-1.9/ htslib/
-  - pushd htslib && ./configure --prefix=/usr && make && sudo make install && popd && pushd demuxlet
+  - pushd htslib && ./configure --prefix=/usr && make && popd && pushd demuxlet
   - "autoreconf -vfi"
   - "./configure"
 script: "make"
