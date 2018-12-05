@@ -27,6 +27,7 @@ addons:
     - xz
     - curl
     - openssl
+    - clang-omp
 
 
 sudo: required
