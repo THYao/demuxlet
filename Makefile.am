@@ -24,8 +24,8 @@ demuxlet_SOURCES = \
 	tsv_reader.cpp \
 	cmd_cram_demuxlet.cpp
 
-if USE_CRYPTO
-demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl -lcrypto
-else
+if USE_CCRYPTO
 demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl
+else
+demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl -lcrypto
 endif
