@@ -19,6 +19,16 @@ addons:
     - libcurl4-openssl-dev
     - libcrypto++-dev
     - zlib1g-dev
+  homebrew:
+    packages:
+    - autoconf
+    - automake
+    - libtool
+    - libbz2-dev
+    - liblzma-dev
+    - libcurl4-openssl-dev
+    - libcrypto++-dev
+    - zlib1g-dev
 
 sudo: true
 install:
