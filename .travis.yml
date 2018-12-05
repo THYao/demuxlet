@@ -25,10 +25,9 @@ addons:
     - automake
     - libtool
     - libbz2-dev
-    - liblzma-dev
-    - libcurl4-openssl-dev
-    - libcrypto++-dev
-    - zlib1g-dev
+    - xz
+    - curl
+    - openssl
 
 sudo: true
 install:
