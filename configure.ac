@@ -40,6 +40,9 @@ AC_CHECK_FUNCS([floor gethostname memset pow select sqrt strchr strstr strtol])
 AC_CHECK_LIB(z, gzopen, [], [AC_MSG_ERROR([libz.{so,a} was not found. Please install zlib at http://www.zlib.net/ first])])
 AC_CHECK_LIB([m],[erf],[AC_DEFINE([HAVE_ERF],[1],[libm includes erf])])
 AC_CHECK_LIB([m],[erfc],[AC_DEFINE([HAVE_ERFC],[1],[libm includes erfc])])
+AC_CHECK_LIB(crpto,HMAC_Update,[HAS_CRYPTO=1])
+AM_CONDITIONAL([USE_CRYPTO], [test "x$HAS_CRYPTO" = "x1"])
+
 
 LT_PREREQ([2.2])
 LT_INIT([dlopen shared])
