@@ -26,7 +26,6 @@ addons:
     - libtool
     - xz
     - curl
-    - openssl
 
 sudo: required
 install:

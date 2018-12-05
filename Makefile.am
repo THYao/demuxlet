@@ -24,4 +24,4 @@ demuxlet_SOURCES = \
 	tsv_reader.cpp \
 	cmd_cram_demuxlet.cpp
 
-demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl -lcrypto
+demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl
