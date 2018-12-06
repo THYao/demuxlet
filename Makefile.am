@@ -26,6 +26,8 @@ demuxlet_SOURCES = \
 
 if USE_CCRYPTO
 demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl
-else
+else if USE_HMCRYPTO
 demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl -lcrypto
+else
+demuxlet_LDADD = ../htslib/libhts.a -lpthread -llzma -lz -lbz2 -lcurl
 endif
