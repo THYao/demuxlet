@@ -95,7 +95,7 @@ Similar to demuxlet, you can run `freemuxlet` by using pileup files as input and
 $ ./freemuxlet --plp /data/$pileup --nsample $n --out /data/$filename
 ```
 
-Similar to demuxlet, add pileup files name for `$pileup`. On the other hand, freemuxlet would need no external genotype but only require number of sample by add an integer for `$n$`.
+Similar to demuxlet, add pileup files name for `$pileup`. On the other hand, freemuxlet would need no external genotype but only require number of sample by adding an integer for `$n`.
 
 
 ### 2.6. freemuxlet output ###
