@@ -51,7 +51,7 @@ First, install required dependencies for MacOS and linux:
 * MacOS: autoconf, automake, libtool, xz, curl
 * linux: autoconf, automake, libtool, libbz2-dev, liblzma-dev, zlib1g-dev
 
-### 2.2. Running dsc-pileup to generate pileup files###
+### 2.2. Running dsc-pileup to generate pileup files ###
 
 Once installing all packages, you can run `dsc-pileup` with the following command:
 
@@ -59,9 +59,9 @@ Once installing all packages, you can run `dsc-pileup` with the following comman
 $ ./dsc-pileup --sam /data/$bam --vcf /data/$ref_vcf --out /data/$pileup
 ```
 
-Add bam file name for `$bam` and reference population vcf file name for `$vcf`. Use `<(zcat $vcf)` or `<(gzcat $vcf)` if vcf file is compressed
+Add bam file name for `$bam` and reference population vcf file name for `$ref_vcf`. Use `<(zcat $vcf)` or `<(gzcat $vcf)` if vcf file is compressed
 
-### 2.3. Running demuxlet###
+### 2.3. Running demuxlet ###
 
 After pileup files generated, you could run demuxlet by the following command:
 
